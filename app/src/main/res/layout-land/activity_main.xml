@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.niu.cs.z1761257.colors.MainActivity"
+    android:orientation="horizontal">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/listFragment"
+        class="edu.niu.cs.z1761257.colors.ListFragment"
+        tools:layout="@layout/fragment_list"
+        android:layout_weight="1"/>
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/infoFrament"
+        class="edu.niu.cs.z1761257.colors.InformationFragment"
+        tools:layout="@layout/fragment_information"
+        android:layout_weight="2"/>
+
+</LinearLayout>
